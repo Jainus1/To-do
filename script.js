@@ -28,3 +28,19 @@ listContariner.addEventListener("click",function(e){
 }, false);
 
  
+inputBox.addEventListener('keydown',function(e) {
+    if (e.key === 'Enter' || e.keyCode === 13){
+        if(inputBox.value === ''){ 
+            alert("Deberías escribir algo");
+    }
+        else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContariner.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span)
+    
+        }}
+ }
+)
