@@ -42,5 +42,6 @@ inputBox.addEventListener('keydown',function(e) {
         li.appendChild(span)
     
         }}
+inputBox.value = "";
  }
 )
